@@ -134,14 +134,118 @@ C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units
                3 Dir(s)  452,538,892,288 bytes free
 ---------------AnotherCppFile.cpp---------------------START
 void foo() {}
----------------AnotherCppFile.cpp---------------------START
+---------------AnotherCppFile.cpp---------------------END
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>cl CppScratchPad.cpp AnotherCppFile.cpp
+Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CppScratchPad.cpp
+CppScratchPad.cpp(149): error C3861: 'foo': identifier not found    <---C++ only looks 1 file at a time
+AnotherCppFile.cpp  
+Generating Code...          
+
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units
+
+21/01/2024  08:54 pm    <DIR>          .
+21/01/2024  08:54 pm    <DIR>          ..
+21/01/2024  08:51 pm               558 AnotherCppFile.cpp
+18/01/2024  03:18 pm               208 AnotherCppFile.h
+21/01/2024  08:52 pm               676 AnotherCppFile.obj   <-- generates obj file 
+21/01/2024  08:14 pm             6,687 C++ Translation Units.vcxproj
+21/01/2024  08:14 pm             1,087 C++ Translation Units.vcxproj.filters
+20/01/2024  11:27 pm               225 C++ Translation Units.vcxproj.user
+21/01/2024  08:54 pm             9,511 CppScratchPad.cpp    <-- error: for foo() so didn't generate obj file
+19/01/2024  07:38 pm                59 Hero.h
+19/01/2024  07:01 pm                62 Monster.h
+19/01/2024  08:17 pm               171 Vector.h
+21/01/2024  08:12 pm    <DIR>          x64
+              10 File(s)         19,244 bytes
+               3 Dir(s)  452,537,073,664 bytes free
+
+----------------CppScratchPad.cpp-------------------START
+void foo();
+//void foo() {}
+
+void main()
+{
+    foo();
+}
+----------------CppScratchPad.cpp-------------------END
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>del *.obj
+
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units
+
+21/01/2024  09:00 pm    <DIR>          .
+21/01/2024  09:00 pm    <DIR>          ..
+21/01/2024  08:51 pm               558 AnotherCppFile.cpp
+18/01/2024  03:18 pm               208 AnotherCppFile.h
+21/01/2024  08:14 pm             6,687 C++ Translation Units.vcxproj
+21/01/2024  08:14 pm             1,087 C++ Translation Units.vcxproj.filters
+20/01/2024  11:27 pm               225 C++ Translation Units.vcxproj.user
+21/01/2024  08:59 pm            10,870 CppScratchPad.cpp
+19/01/2024  07:38 pm                59 Hero.h
+19/01/2024  07:01 pm                62 Monster.h
+19/01/2024  08:17 pm               171 Vector.h
+21/01/2024  08:12 pm    <DIR>          x64
+               9 File(s)         19,927 bytes
+               3 Dir(s)  452,305,694,720 bytes free
+
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>cl CppScratchPad.cpp AnotherCppFile.cpp
+Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CppScratchPad.cpp
+AnotherCppFile.cpp
+Generating Code...
+Microsoft (R) Incremental Linker Version 14.38.33134.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CppScratchPad.exe
+CppScratchPad.obj
+AnotherCppFile.obj
+
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units
+
+21/01/2024  09:05 pm    <DIR>          .
+21/01/2024  09:05 pm    <DIR>          ..
+21/01/2024  08:51 pm               558 AnotherCppFile.cpp
+18/01/2024  03:18 pm               208 AnotherCppFile.h
+21/01/2024  09:02 pm               676 AnotherCppFile.obj
+21/01/2024  08:14 pm             6,687 C++ Translation Units.vcxproj
+21/01/2024  08:14 pm             1,087 C++ Translation Units.vcxproj.filters
+20/01/2024  11:27 pm               225 C++ Translation Units.vcxproj.user
+21/01/2024  09:03 pm            12,487 CppScratchPad.cpp
+21/01/2024  09:02 pm            85,504 CppScratchPad.exe
+21/01/2024  09:02 pm             1,123 CppScratchPad.obj
+19/01/2024  07:38 pm                59 Hero.h
+19/01/2024  07:01 pm                62 Monster.h
+19/01/2024  08:17 pm               171 Vector.h
+21/01/2024  08:12 pm    <DIR>          x64
+              12 File(s)        108,847 bytes
+               3 Dir(s)  452,304,834,560 bytes free
+--------------cl CppScratchPad.cpp AnotherCppFile.cpp-------------------
+sequence: 
+the compiler:generates two obj file(AnotherCppFile.obj,CppScratchPad.obj)
+the linker links the two generated obj file(AnotherCppFile.obj,CppScratchPad.obj) and created the exe file(CppScratchPad.exe)
 
 
 
 * --------------- CMD --------------------------END
 */
 
-
+void foo();
 //void foo() {}
 
 void main()
