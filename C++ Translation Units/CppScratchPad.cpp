@@ -8,6 +8,54 @@ using std::endl;
 // ----------------------- C++ Translation Units --------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=N4khTYkTwtI&list=PLRwVmtr-pp05Bl0j6lwXd8tU754nUEB5P&index=4
 
+/* 
+* --------------- CMD -------------------------------START
+* 
+* C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units
+
+21/01/2024  08:12 pm    <DIR>          .
+21/01/2024  08:12 pm    <DIR>          ..
+20/01/2024  11:29 pm             2,581 .gitattributes
+20/01/2024  11:29 pm             6,585 .gitignore
+21/01/2024  08:15 pm    <DIR>          C++ Translation Units
+20/01/2024  11:26 pm             1,483 C++ Translation Units.sln
+21/01/2024  08:12 pm    <DIR>          x64
+               3 File(s)         10,649 bytes
+               4 Dir(s)  452,536,356,864 bytes free
+
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units>cd C++ Translation Units
+
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DAE4-938D
+
+ Directory of C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units
+
+21/01/2024  08:15 pm    <DIR>          .
+21/01/2024  08:15 pm    <DIR>          ..
+21/01/2024  08:15 pm               545 AnotherCppFile.cpp
+18/01/2024  03:18 pm               208 AnotherCppFile.h
+21/01/2024  08:14 pm             6,687 C++ Translation Units.vcxproj
+21/01/2024  08:14 pm             1,087 C++ Translation Units.vcxproj.filters
+20/01/2024  11:27 pm               225 C++ Translation Units.vcxproj.user
+21/01/2024  08:12 pm             3,176 CppScratchPad.cpp
+19/01/2024  07:38 pm                59 Hero.h
+19/01/2024  07:01 pm                62 Monster.h
+19/01/2024  08:17 pm               171 Vector.h
+21/01/2024  08:12 pm    <DIR>          x64
+               9 File(s)         12,220 bytes
+               3 Dir(s)  452,536,348,672 bytes free
+
+
+
+* --------------- CMD --------------------------END
+*/
+
+
 void main()
 {
 
