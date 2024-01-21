@@ -1,4 +1,4 @@
-// 3 Steps Preprocessor process: 1. Preprocessor, 2. Compiler, 3. Linker
+// 3 Steps Preprocessor process(stages of compilation process): 1. Preprocessor, 2. Compiler, 3. Linker
 // recursively copy/paste all #include
 
 #include <iostream>
@@ -55,7 +55,7 @@ C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units
  ------------------------------------
  void main()
 {
-    foo();
+    foo();          // in compiler
 }
 -------------------------------------
 C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>cl CppScratchPad.cpp
@@ -64,6 +64,26 @@ Copyright (C) Microsoft Corporation.  All rights reserved.
 
 CppScratchPad.cpp
 CppScratchPad.cpp(64): error C3861: 'foo': identifier not found
+---------------------------------------
+void foo() {}
+
+void main()
+{
+    foo();
+}
+---------------------------------------
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>cl CppScratchPad.cpp
+Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CppScratchPad.cpp
+Microsoft (R) Incremental Linker Version 14.38.33134.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CppScratchPad.exe      <---------- generated
+CppScratchPad.obj
+
+
 
 
 
@@ -71,9 +91,11 @@ CppScratchPad.cpp(64): error C3861: 'foo': identifier not found
 */
 
 
+void foo() {}
+
 void main()
 {
-    foo();
+    foo(); 
 }
 
 
