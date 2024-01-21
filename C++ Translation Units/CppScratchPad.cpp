@@ -9,7 +9,10 @@ using std::endl;
 // ----------------------- C++ Translation Units --------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=N4khTYkTwtI&list=PLRwVmtr-pp05Bl0j6lwXd8tU754nUEB5P&index=4
 
-// cl - to invoke CMD line in C++ 
+// C++ only looks 1 file at a time
+//cl < -- - invoke in C++
+//del * .exe * .obj < -- - delete 2files(exe / objFILE)
+
 
 /* 
 * --------------- CMD -------------------------------START
