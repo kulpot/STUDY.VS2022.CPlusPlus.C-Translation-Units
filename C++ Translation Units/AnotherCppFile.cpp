@@ -1,7 +1,7 @@
 // -------------------- C++ Translation Units ---------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=N4khTYkTwtI&list=PLRwVmtr-pp05Bl0j6lwXd8tU754nUEB5P&index=6
 
-
+void foo() {}
 
 
 
