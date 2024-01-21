@@ -1,3 +1,44 @@
+// -------------------- C++ Translation Units ---------------------------------------------------
+//ref link:https://www.youtube.com/watch?v=N4khTYkTwtI&list=PLRwVmtr-pp05Bl0j6lwXd8tU754nUEB5P&index=6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // -------Definitions------- the actual codes
 //void foo()
@@ -25,7 +66,7 @@
 //
 //}
 
-void foo()	// 2nd define linker error
-{
-
-}
+//void foo()	// 2nd define linker error
+//{
+//
+//}
