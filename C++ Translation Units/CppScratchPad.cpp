@@ -8,6 +8,8 @@ using std::endl;
 // ----------------------- C++ Translation Units --------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=N4khTYkTwtI&list=PLRwVmtr-pp05Bl0j6lwXd8tU754nUEB5P&index=4
 
+// cl - to invoke CMD line in C++ 
+
 /* 
 * --------------- CMD -------------------------------START
 * 
@@ -50,6 +52,19 @@ C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units
                9 File(s)         12,220 bytes
                3 Dir(s)  452,536,348,672 bytes free
 
+ ------------------------------------
+ void main()
+{
+    foo();
+}
+-------------------------------------
+C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units>cl CppScratchPad.cpp
+Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33134 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CppScratchPad.cpp
+CppScratchPad.cpp(64): error C3861: 'foo': identifier not found
+
 
 
 * --------------- CMD --------------------------END
@@ -58,7 +73,7 @@ C:\Users\sunny\source\reposCPlusPlus\C++ Translation Units\C++ Translation Units
 
 void main()
 {
-
+    foo();
 }
 
 
