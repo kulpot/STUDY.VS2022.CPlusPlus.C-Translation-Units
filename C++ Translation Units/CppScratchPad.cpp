@@ -5,20 +5,53 @@
 using std::cout;
 using std::endl;
 
+// ----------------------- C++ Translation Units --------------------------------------------------------
+//ref link:https://www.youtube.com/watch?v=N4khTYkTwtI&list=PLRwVmtr-pp05Bl0j6lwXd8tU754nUEB5P&index=4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ------------------------- C++ Linker Errors ------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=xNOLRakCOyw&list=PLRwVmtr-pp05Bl0j6lwXd8tU754nUEB5P&index=3
 
 // Linker Errors - if theres is a multiple define in the .obj file 
 
-void foo()	// 1st define linker error - 2nd in AnotherCppFile.cpp
-{
-
-}
-
-void main()
-{
-	foo();
-}
+//void foo()	// 1st define linker error - 2nd in AnotherCppFile.cpp
+//{
+//
+//}
+//
+//void main()
+//{
+//	foo();
+//}
 
 
 
